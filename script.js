@@ -4,7 +4,7 @@ kaboom({
 	scale: 2,
 });
 
-loadRoot("/assets/");
+loadRoot("./assets/");
 
 loadSprite("blue_bird", "birds/bluebird.png");
 loadSprite("red_bird", "birds/redbird.png");
