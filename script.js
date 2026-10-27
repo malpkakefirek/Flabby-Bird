@@ -4,7 +4,10 @@ kaboom({
 	scale: 2,
 });
 
-loadRoot("./assets/");
+const isGitHubPages = window.location.hostname.includes("github.io");
+const repoName = "Flabby-Bird";
+
+loadRoot(isGitHubPages ? `/${repoName}/assets/` : "/assets/");
 
 loadSprite("blue_bird", "birds/bluebird.png");
 loadSprite("red_bird", "birds/redbird.png");
